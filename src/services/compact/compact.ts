@@ -50,7 +50,7 @@ import { cacheToObject } from '../../utils/fileStateCache.js'
 import {
   type CacheSafeParams,
   runForkedAgent,
-} from '../../utils/forkedAgent.js'
+} from '../../prompt/generation/forkedContext.js'
 import {
   executePostCompactHooks,
   executePreCompactHooks,

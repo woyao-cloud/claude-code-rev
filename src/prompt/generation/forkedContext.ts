@@ -1,19 +1,47 @@
-// Forwarder: migrated to src/prompt/generation/forkedContext.ts
-export {
-  prepareForkedCommandContext,
-  extractResultText,
-  createCacheSafeParams,
-  saveCacheSafeParams,
-  getLastCacheSafeParams,
-  runForkedAgent,
-  createSubagentContext,
-  createGetAppStateWithAllowedTools,
-  type ForkedAgentParams,
-  type ForkedAgentResult,
-  type CacheSafeParams,
-  type PreparedForkedContext,
-  type SubagentContextOverrides,
-} from '../prompt/generation/forkedContext.js'
+/**
+ * Helper for running forked agent query loops with usage tracking.
+ *
+ * This utility ensures forked agents:
+ * 1. Share identical cache-critical params with the parent to guarantee prompt cache hits
+ * 2. Track full usage metrics across the entire query loop
+ * 3. Log metrics via the tengu_fork_agent_query event when complete
+ * 4. Isolate mutable state to prevent interference with the main agent loop
+ */
+
+import type { UUID } from 'crypto'
+import { randomUUID } from 'crypto'
+import type { PromptCommand } from '../commands.js'
+import type { QuerySource } from '../constants/querySource.js'
+import type { CanUseToolFn } from '../hooks/useCanUseTool.js'
+import { query } from '../query.js'
+import {
+  type AnalyticsMetadata_I_VERIFIED_THIS_IS_NOT_CODE_OR_FILEPATHS,
+  logEvent,
+} from '../services/analytics/index.js'
+import { accumulateUsage, updateUsage } from '../services/api/claude.js'
+import { EMPTY_USAGE, type NonNullableUsage } from '../services/api/logging.js'
+import type { ToolUseContext } from '../Tool.js'
+import type { AgentDefinition } from '../tools/AgentTool/loadAgentsDir.js'
+import type { AgentId } from '../types/ids.js'
+import type { Message } from '../types/message.js'
+import { createChildAbortController } from './abortController.js'
+import { logForDebugging } from './debug.js'
+import { cloneFileStateCache } from './fileStateCache.js'
+import type { REPLHookContext } from './hooks/postSamplingHooks.js'
+import {
+  createUserMessage,
+  extractTextContent,
+  getLastAssistantMessage,
+} from './messages.js'
+import { createDenialTrackingState } from './permissions/denialTracking.js'
+import { parseToolListFromCLI } from './permissions/permissionSetup.js'
+import { recordSidechainTranscript } from './sessionStorage.js'
+import type { SystemPrompt } from '../prompt/core/types.js'
+import {
+  type ContentReplacementState,
+  cloneContentReplacementState,
+} from './toolResultStorage.js'
+import { createAgentId } from './uuid.js'
 
 /**
  * Parameters that must be identical between the fork and parent API requests
@@ -270,7 +298,7 @@ export type SubagentContextOverrides = {
    *  Used by speculation for overlay file path rewriting. */
   requireCanUseTool?: boolean
   /** Override replacement state — used by resumeAgentBackground to thread
-   * state reconstructed from the resumed sidechain so the same results
+   * state reconstructed from the sidechain so the same results
    * are re-replaced (prompt cache stability). */
   contentReplacementState?: ContentReplacementState
 }

@@ -55,7 +55,7 @@ import { isBareMode, isEnvDefinedFalsy } from '../utils/envUtils.js'
 import {
   createCacheSafeParams,
   saveCacheSafeParams,
-} from '../utils/forkedAgent.js'
+} from '../prompt/generation/forkedContext.js'
 
 type StopHookResult = {
   blockingErrors: Message[]
