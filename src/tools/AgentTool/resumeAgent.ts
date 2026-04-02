@@ -22,7 +22,7 @@ import {
   getAgentTranscript,
   readAgentMetadata,
 } from '../../utils/sessionStorage.js'
-import { buildEffectiveSystemPrompt } from '../../utils/systemPrompt.js'
+import { buildEffectiveSystemPrompt } from '../../prompt/core/systemPrompt.js'
 import type { SystemPrompt } from '../../prompt/core/types.js'
 import { getTaskOutputPath } from '../../utils/task/diskOutput.js'
 import { getParentSessionId } from '../../utils/teammate.js'

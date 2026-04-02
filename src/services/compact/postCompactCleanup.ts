@@ -1,6 +1,6 @@
 import { feature } from 'bun:bundle'
 import type { QuerySource } from '../../constants/querySource.js'
-import { clearSystemPromptSections } from '../../constants/systemPromptSections.js'
+import { clearSystemPromptSections } from '../../prompt/core/sections.js'
 import { getUserContext } from '../../context.js'
 import { clearSpeculativeChecks } from '../../tools/BashTool/bashPermissions.js'
 import { clearClassifierApprovals } from '../../utils/classifierApprovals.js'

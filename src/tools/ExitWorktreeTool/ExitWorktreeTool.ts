@@ -5,7 +5,7 @@ import {
   setOriginalCwd,
   setProjectRoot,
 } from '../../bootstrap/state.js'
-import { clearSystemPromptSections } from '../../constants/systemPromptSections.js'
+import { clearSystemPromptSections } from '../../prompt/core/sections.js'
 import { logEvent } from '../../services/analytics/index.js'
 import type { Tool } from '../../Tool.js'
 import { buildTool, type ToolDef } from '../../Tool.js'
