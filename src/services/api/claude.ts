@@ -91,7 +91,7 @@ import {
 import {
   asSystemPrompt,
   type SystemPrompt,
-} from '../../utils/systemPromptType.js'
+} from '../../prompt/core/types.js'
 import { tokenCountFromLastAPIResponse } from '../../utils/tokens.js'
 import { getDynamicConfig_BLOCKS_ON_INIT } from '../analytics/growthbook.js'
 import {

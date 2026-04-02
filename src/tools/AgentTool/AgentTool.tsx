@@ -32,7 +32,7 @@ import { enqueueSdkEvent } from '../../utils/sdkEventQueue.js';
 import { writeAgentMetadata } from '../../utils/sessionStorage.js';
 import { sleep } from '../../utils/sleep.js';
 import { buildEffectiveSystemPrompt } from '../../utils/systemPrompt.js';
-import { asSystemPrompt } from '../../utils/systemPromptType.js';
+import { asSystemPrompt } from '../../prompt/core/types.js';
 import { getTaskOutputPath } from '../../utils/task/diskOutput.js';
 import { getParentSessionId, isTeammate } from '../../utils/teammate.js';
 import { isInProcessTeammate } from '../../utils/teammateContext.js';

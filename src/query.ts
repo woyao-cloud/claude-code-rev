@@ -26,7 +26,7 @@ import {
 import { ImageSizeError } from './utils/imageValidation.js'
 import { ImageResizeError } from './utils/imageResizer.js'
 import { findToolByName, type ToolUseContext } from './Tool.js'
-import { asSystemPrompt, type SystemPrompt } from './utils/systemPromptType.js'
+import { asSystemPrompt, type SystemPrompt } from './prompt/core/types.js'
 import type {
   AssistantMessage,
   AttachmentMessage,

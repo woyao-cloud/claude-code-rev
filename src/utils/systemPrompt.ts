@@ -7,9 +7,9 @@ import type { ToolUseContext } from '../Tool.js'
 import type { AgentDefinition } from '../tools/AgentTool/loadAgentsDir.js'
 import { isBuiltInAgent } from '../tools/AgentTool/loadAgentsDir.js'
 import { isEnvTruthy } from './envUtils.js'
-import { asSystemPrompt, type SystemPrompt } from './systemPromptType.js'
+import { asSystemPrompt, type SystemPrompt } from '../prompt/core/types.js'
 
-export { asSystemPrompt, type SystemPrompt } from './systemPromptType.js'
+export { asSystemPrompt, type SystemPrompt } from '../prompt/core/types.js'
 
 // Dead code elimination: conditional import for proactive mode.
 // Same pattern as prompts.ts — lazy require to avoid pulling the module

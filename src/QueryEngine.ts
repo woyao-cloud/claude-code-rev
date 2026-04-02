@@ -75,7 +75,7 @@ import {
   flushSessionStorage,
   recordTranscript,
 } from './utils/sessionStorage.js'
-import { asSystemPrompt } from './utils/systemPromptType.js'
+import { asSystemPrompt } from './prompt/core/types.js'
 import { resolveThemeSetting } from './utils/systemTheme.js'
 import {
   shouldEnableThinkingByDefault,

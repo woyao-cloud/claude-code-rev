@@ -22,7 +22,7 @@ import { type CacheSafeParams, getLastCacheSafeParams } from '../../utils/forked
 import { getMessagesAfterCompactBoundary } from '../../utils/messages.js';
 import type { ProcessUserInputContext } from '../../utils/processUserInput/processUserInput.js';
 import { runSideQuestion } from '../../utils/sideQuestion.js';
-import { asSystemPrompt } from '../../utils/systemPromptType.js';
+import { asSystemPrompt } from '../../prompt/core/types.js';
 type BtwComponentProps = {
   question: string;
   context: ProcessUserInputContext;

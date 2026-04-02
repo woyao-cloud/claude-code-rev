@@ -23,7 +23,7 @@ import { getInMemoryErrors, logError } from '../utils/log.js';
 import { isEssentialTrafficOnly } from '../utils/privacyLevel.js';
 import { extractTeammateTranscriptsFromTasks, getTranscriptPath, loadAllSubagentTranscriptsFromDisk, MAX_TRANSCRIPT_READ_BYTES } from '../utils/sessionStorage.js';
 import { jsonStringify } from '../utils/slowOperations.js';
-import { asSystemPrompt } from '../utils/systemPromptType.js';
+import { asSystemPrompt } from '../prompt/core/types.js';
 import { ConfigurableShortcutHint } from './ConfigurableShortcutHint.js';
 import { Byline } from './design-system/Byline.js';
 import { Dialog } from './design-system/Dialog.js';

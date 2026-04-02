@@ -71,7 +71,7 @@ import {
 import {
   asSystemPrompt,
   type SystemPrompt,
-} from '../../utils/systemPromptType.js'
+} from '../../prompt/core/types.js'
 import {
   isPerfettoTracingEnabled,
   registerAgent as registerPerfettoAgent,
