@@ -21,7 +21,7 @@ import { logForDebugging } from './debug.js'
 import { safeParseJSON } from './json.js'
 import { lazySchema } from './lazySchema.js'
 import { extractTextContent } from './messages.js'
-import { asSystemPrompt } from './systemPromptType.js'
+import { asSystemPrompt } from '../prompt/core/types.js'
 
 const MAX_CONVERSATION_TEXT = 1000
 

@@ -12,7 +12,7 @@ import { safeParseJSON } from '../json.js'
 import { createUserMessage, extractTextContent } from '../messages.js'
 import { getSmallFastModel } from '../model/model.js'
 import type { PromptHook } from '../settings/types.js'
-import { asSystemPrompt } from '../systemPromptType.js'
+import { asSystemPrompt } from '../../prompt/core/types.js'
 import { addArgumentsToPrompt, hookResponseSchema } from './hookHelpers.js'
 
 /**

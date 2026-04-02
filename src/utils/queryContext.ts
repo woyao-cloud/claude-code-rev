@@ -21,7 +21,7 @@ import { createAbortController } from './abortController.js'
 import type { FileStateCache } from './fileStateCache.js'
 import type { CacheSafeParams } from './forkedAgent.js'
 import { getMainLoopModel } from './model/model.js'
-import { asSystemPrompt } from './systemPromptType.js'
+import { asSystemPrompt } from '../prompt/core/types.js'
 import {
   shouldEnableThinkingByDefault,
   type ThinkingConfig,

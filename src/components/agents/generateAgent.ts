@@ -15,7 +15,7 @@ import {
   logEvent,
 } from '../../services/analytics/index.js'
 import { jsonParse } from '../../utils/slowOperations.js'
-import { asSystemPrompt } from '../../utils/systemPromptType.js'
+import { asSystemPrompt } from '../../prompt/core/types.js'
 
 type GeneratedAgent = {
   identifier: string

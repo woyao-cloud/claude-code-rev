@@ -21,7 +21,7 @@ import {
 } from '../messages.js'
 import { getSmallFastModel } from '../model/model.js'
 import { jsonParse } from '../slowOperations.js'
-import { asSystemPrompt } from '../systemPromptType.js'
+import { asSystemPrompt } from '../../prompt/core/types.js'
 import {
   type ApiQueryHookConfig,
   createApiQueryHook,
