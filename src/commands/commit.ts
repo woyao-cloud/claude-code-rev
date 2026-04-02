@@ -1,6 +1,6 @@
 import type { Command } from '../commands.js'
 import { getAttributionTexts } from '../utils/attribution.js'
-import { executeShellCommandsInPrompt } from '../utils/promptShellExecution.js'
+import { executeShellCommandsInPrompt } from '../prompt/tools/shellExecution.js'
 import { getUndercoverInstructions, isUndercover } from '../utils/undercover.js'
 
 const ALLOWED_TOOLS = [

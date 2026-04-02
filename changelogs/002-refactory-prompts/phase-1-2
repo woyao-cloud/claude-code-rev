@@ -662,3 +662,58 @@
   2. src/utils/systemPromptSections.ts → src/prompt/core/sections.ts
 
   是否继续执行阶段 2？
+
+   阶段 2 已完成 ✅
+
+  完成内容
+
+  ┌──────────┬──────┬────────────────────────────────────────────┐
+  │   任务   │ 状态 │                    说明                    │
+  ├──────────┼──────┼────────────────────────────────────────────┤
+  │ Task 2.1 │ ✅   │ 创建 src/prompt/core/systemPrompt.ts       │
+  ├──────────┼──────┼────────────────────────────────────────────┤
+  │ Task 2.2 │ ✅   │ 创建 src/prompt/core/sections.ts           │
+  ├──────────┼──────┼────────────────────────────────────────────┤
+  │ Task 2.3 │ ✅   │ 更新 4 个 systemPrompt.ts 引用文件         │
+  ├──────────┼──────┼────────────────────────────────────────────┤
+  │ Task 2.4 │ ✅   │ 更新 4 个 systemPromptSections.ts 引用文件 │
+  └──────────┴──────┴────────────────────────────────────────────┘
+
+  迁移的文件
+
+  核心 Prompt 构建：
+  - src/utils/systemPrompt.ts → src/prompt/core/systemPrompt.ts
+  - src/constants/systemPromptSections.ts → src/prompt/core/sections.ts
+
+  转发器已创建：
+  - src/utils/systemPrompt.ts - 转发到 ../prompt/core/systemPrompt.js
+  - src/constants/systemPromptSections.ts - 转发到 ../prompt/core/sections.js
+
+  更新的引用文件（8 个）：
+  - src/commands/compact/compact.ts
+  - src/screens/REPL.tsx
+  - src/tools/AgentTool/resumeAgent.ts
+  - src/tools/AgentTool/AgentTool.tsx
+  - src/services/compact/postCompactCleanup.ts
+  - src/tools/EnterWorktreeTool/EnterWorktreeTool.ts
+  - src/tools/ExitWorktreeTool/ExitWorktreeTool.ts
+  - src/utils/sessionRestore.ts
+
+  当前 src/prompt/ 结构
+
+  src/prompt/
+  ├── core/
+  │   ├── index.ts
+  │   ├── types.ts      ← 阶段 1
+  │   ├── systemPrompt.ts    ← 阶段 2
+  │   └── sections.ts   ← 阶段 2
+  ├── generation/
+  │   └── index.ts
+  ├── tools/
+  │   └── index.ts
+  ├── messages/
+  │   └── index.ts
+  └── ui/
+      └── index.ts
+
+  所有源文件引用已更新，文档中的旧路径引用是示例代码，无需修改。是否继续执行阶段 3：Prompt 工具函数迁移？

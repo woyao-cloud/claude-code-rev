@@ -9,7 +9,7 @@ import { toIDEDisplayName } from '../../utils/ide.js';
 import { applyPermissionUpdate } from '../../utils/permissions/PermissionUpdate.js';
 import { prepareContextForPlanMode } from '../../utils/permissions/permissionSetup.js';
 import { getPlan, getPlanFilePath } from '../../utils/plans.js';
-import { editFileInEditor } from '../../utils/promptEditor.js';
+import { editFileInEditor } from '../../prompt/tools/editor.js';
 import { renderToString } from '../../utils/staticRender.js';
 function PlanDisplay(t0) {
   const $ = _c(11);

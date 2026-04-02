@@ -77,7 +77,7 @@ import { cyclePermissionMode, getNextPermissionMode } from '../../utils/permissi
 import { transitionPermissionMode } from '../../utils/permissions/permissionSetup.js';
 import { getPlatform } from '../../utils/platform.js';
 import type { ProcessUserInputContext } from '../../utils/processUserInput/processUserInput.js';
-import { editPromptInEditor } from '../../utils/promptEditor.js';
+import { editPromptInEditor } from '../../prompt/tools/editor.js';
 import { hasAutoModeOptIn } from '../../utils/settings/settings.js';
 import { findBtwTriggerPositions } from '../../utils/sideQuestion.js';
 import { findSlashCommandPositions } from '../../utils/suggestions/commandSuggestions.js';

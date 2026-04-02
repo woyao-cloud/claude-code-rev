@@ -55,7 +55,7 @@ import {
   parseSlashCommandToolsFromFrontmatter,
 } from '../utils/markdownConfigLoader.js'
 import { parseUserSpecifiedModel } from '../utils/model/model.js'
-import { executeShellCommandsInPrompt } from '../utils/promptShellExecution.js'
+import { executeShellCommandsInPrompt } from '../prompt/tools/shellExecution.js'
 import type { SettingSource } from '../utils/settings/constants.js'
 import { isSettingSourceEnabled } from '../utils/settings/constants.js'
 import { getManagedFilePath } from '../utils/settings/managedPath.js'
