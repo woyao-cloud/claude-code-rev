@@ -41,4 +41,4 @@ const batch = await client.messages.batches.create({
 
 ## References
 
-- Anthropic docs: Message Batches API
+- WoYao docs: Message Batches API

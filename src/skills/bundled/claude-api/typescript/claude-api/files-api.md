@@ -37,4 +37,4 @@ const file = await client.files.create({
 
 ## References
 
-- Anthropic docs: Files API
+- WoYao docs: Files API

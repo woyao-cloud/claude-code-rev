@@ -336,8 +336,8 @@ function getBigQueryExportingReader() {
 function isBigQueryMetricsEnabled() {
   // BigQuery metrics are enabled for:
   // 1. API customers (excluding Claude.ai subscribers and Bedrock/Vertex)
-  // 2. Claude for Enterprise (C4E) users
-  // 3. Claude for Teams users
+  // 2. Yao for Enterprise (C4E) users
+  // 3. Yao for Teams users
   const subscriptionType = getSubscriptionType()
   const isC4EOrTeamUser =
     isClaudeAISubscriber() &&

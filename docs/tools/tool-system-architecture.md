@@ -1,8 +1,8 @@
-# Claude Code 工具系统架构文档
+# Yao Code 工具系统架构文档
 
 ## 概述
 
-本文档详细描述了 Claude Code 的工具系统（Tool System）和命令系统（Command System）的架构设计、执行流程及代码调用过程。
+本文档详细描述了 Yao Code 的工具系统（Tool System）和命令系统（Command System）的架构设计、执行流程及代码调用过程。
 
 **版本**: 999.0.0-restored  
 **最后更新**: 2026-04-01

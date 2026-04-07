@@ -1,4 +1,4 @@
-# Claude Code Prompt 生成流程详细分析
+# Yao Code Prompt 生成流程详细分析
 
 ## 1. 概述
 
@@ -24,7 +24,7 @@ Claude Code 中主要有以下几种 prompt 类型：
 
 ```
 ┌─────────────────────────────────────────────────────────────────────────────┐
-│                          Claude Code Prompt 生成系统                          │
+│                          Yao Code Prompt 生成系统                          │
 └─────────────────────────────────────────────────────────────────────────────┘
 
   用户输入
@@ -435,7 +435,7 @@ export function buildEffectiveSystemPrompt({
 │     - Proactive 模式：追加到 default                             │
 │     - 其他模式：替换 default                                     │
 │  3. Custom system prompt (--system-prompt 参数)                 │
-│  4. Default system prompt (标准 Claude Code prompt)             │
+│  4. Default system prompt (标准 Yao Code prompt)             │
 │                                                                 │
 │  Append: appendSystemPrompt (始终追加到末尾)                     │
 └─────────────────────────────────────────────────────────────────┘
@@ -1090,7 +1090,7 @@ API 错误
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│                    Claude Code Prompt 生成系统                    │
+│                    Yao Code Prompt 生成系统                    │
 ├─────────────────────────────────────────────────────────────────┤
 │                                                                  │
 │  用户输入层                                                       │

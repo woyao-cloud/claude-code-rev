@@ -2,7 +2,7 @@
 
 ## 概述
 
-工具函数层（Utils Layer）是 Claude Code 架构中的基础设施层，位于服务层之下，为整个应用提供通用的工具函数和基础能力。
+工具函数层（Utils Layer）是 Yao Code 架构中的基础设施层，位于服务层之下，为整个应用提供通用的工具函数和基础能力。
 
 ---
 
@@ -64,7 +64,7 @@ getAuthTokenSource() ──┬── 检查 --bare 模式
                        ├── 检查 CLAUDE_CODE_OAUTH_TOKEN
                        ├── 检查 OAuth FD 令牌
                        ├── 检查 apiKeyHelper
-                       └── 检查 Claude AI OAuth
+                       └── 检查 Yao AI OAuth
     │
     ▼
 getAnthropicApiKeyWithSource() ──┬── 检查 ANTHROPIC_API_KEY

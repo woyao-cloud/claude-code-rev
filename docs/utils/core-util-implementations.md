@@ -59,7 +59,7 @@ function getAuthTokenSource(): { source: string, hasToken: boolean } {
     return { source: 'apiKeyHelper', hasToken: true }
   }
   
-  // 6. Claude AI OAuth
+  // 6. Yao AI OAuth
   const oauthTokens = getClaudeAIOAuthTokens()
   if (shouldUseClaudeAIAuth(oauthTokens?.scopes) && oauthTokens?.accessToken) {
     return { source: 'claude.ai', hasToken: true }

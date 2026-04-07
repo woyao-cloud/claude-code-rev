@@ -2,7 +2,7 @@
 
 ## 概述
 
-本文档详细描述 Claude Code CLI 传输层（CLI Transport Layer）的架构设计、模块组成和执行流程。传输层负责处理所有与外部 API 的通信，包括 Anthropic API、AWS Bedrock、GCP Vertex AI 和 Azure Foundry。
+本文档详细描述 Yao Code CLI 传输层（CLI Transport Layer）的架构设计、模块组成和执行流程。传输层负责处理所有与外部 API 的通信，包括 Anthropic API、AWS Bedrock、GCP Vertex AI 和 Azure Foundry。
 
 **版本**: 999.0.0-restored  
 **最后更新**: 2026-04-01

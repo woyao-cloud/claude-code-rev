@@ -1,11 +1,11 @@
 # Error Codes
 
-Use this note when the user asks why an Anthropic API call failed or how to harden error handling.
+Use this note when the user asks why an WoYao API call failed or how to harden error handling.
 
 ## What To Check First
 
 - HTTP status code
-- Anthropic error type and message body
+- WoYao error type and message body
 - Whether the failure is transient or request-specific
 - Whether streaming failed before completion or before the first event
 
@@ -19,7 +19,7 @@ Use this note when the user asks why an Anthropic API call failed or how to hard
 
 ## Implementation Guidance
 
-- Log the Anthropic request ID when available so failed requests can be correlated.
+- Log the WoYao request ID when available so failed requests can be correlated.
 - Surface response body details in server logs, but avoid leaking full prompts or secrets to users.
 - Make retries idempotent where possible, especially for batch polling and file workflows.
 - Distinguish validation failures from transport failures in your code paths.
@@ -29,4 +29,4 @@ Use this note when the user asks why an Anthropic API call failed or how to hard
 1. Validate request construction locally.
 2. Retry only transient classes such as rate limits and server errors.
 3. For streaming, decide whether to resume, restart, or fall back to non-streaming output.
-4. If the user asks for exact current error semantics, verify against Anthropic’s live API reference.
+4. If the user asks for exact current error semantics, verify against WoYao’s live API reference.

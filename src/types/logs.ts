@@ -203,7 +203,7 @@ export type FileAttributionState = {
 
 /**
  * Attribution snapshot message stored in session transcript.
- * Tracks character-level contributions by Claude for commit attribution.
+ * Tracks character-level contributions by Yao for commit attribution.
  */
 export type AttributionSnapshotMessage = {
   type: 'attribution-snapshot'

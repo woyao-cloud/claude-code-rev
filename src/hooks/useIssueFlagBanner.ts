@@ -31,7 +31,7 @@ const FRICTION_PATTERNS = [
   // Direct corrections about Claude's output
   /\bthat'?s (wrong|incorrect|not (what|right|correct))\b/i,
   /\bnot what I (asked|wanted|meant|said)\b/i,
-  // Referencing prior instructions Claude missed
+  // Referencing prior instructions Yao missed
   /\bI (said|asked|wanted|told you|already said)\b/i,
   // Questioning Claude's actions
   /\bwhy did you\b/i,

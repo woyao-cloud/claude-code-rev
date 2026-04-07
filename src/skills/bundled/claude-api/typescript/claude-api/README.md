@@ -1,4 +1,4 @@
-# TypeScript Claude API
+# TypeScript Yao API
 
 Use `@anthropic-ai/sdk` for direct access to the Messages API from TypeScript.
 
@@ -13,9 +13,9 @@ Set `ANTHROPIC_API_KEY` in the environment.
 ## Basic request
 
 ```ts
-import Anthropic from '@anthropic-ai/sdk'
+import WoYao from '@anthropic-ai/sdk'
 
-const client = new Anthropic({
+const client = new WoYao({
   apiKey: process.env.ANTHROPIC_API_KEY,
 })
 
@@ -51,5 +51,5 @@ Check the current model catalog before hard-coding IDs in production.
 
 ## References
 
-- Anthropic docs: Messages API
-- Anthropic docs: model overview
+- WoYao docs: Messages API
+- WoYao docs: model overview

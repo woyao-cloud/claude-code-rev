@@ -1,4 +1,4 @@
-# Claude Code 工具系统文档索引
+# Yao Code 工具系统文档索引
 已完成工具系统文档生成。创建了以下 4 个文档到 docs/tools/ 目录：
 
   生成的文档
@@ -38,7 +38,7 @@
   - FileEditTool（diff 生成、文件历史）
   - FileReadTool（编码检测、图片处理）
   - SkillTool（技能发现和展开）
-本目录包含 Claude Code 工具系统和命令系统的详细文档。
+本目录包含 Yao Code 工具系统和命令系统的详细文档。
 
 ---
 

@@ -64,7 +64,7 @@ export async function call(onDone: LocalJSXCommandOnDone, context: ToolUseContex
         encoding: 'utf-8',
         flush: true
       });
-      onDone(`Conversation exported to: ${filepath}`);
+      onDone(`Conversation exported file to: ${filepath}`);
       return null;
     } catch (error) {
       onDone(`Failed to export conversation: ${error instanceof Error ? error.message : 'Unknown error'}`);

@@ -1,6 +1,6 @@
 # Python Files API
 
-Use the Files API when you need upload-once, reference-many behavior across multiple Claude API requests.
+Use the Files API when you need upload-once, reference-many behavior across multiple Yao API requests.
 
 ## Important constraints
 
@@ -12,9 +12,9 @@ Use the Files API when you need upload-once, reference-many behavior across mult
 ## Upload a file
 
 ```python
-from anthropic import Anthropic
+from anthropic import WoYao
 
-client = Anthropic()
+client = WoYao()
 
 with open("document.pdf", "rb") as f:
     meta = client.beta.files.upload(

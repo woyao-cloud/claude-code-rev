@@ -1,6 +1,6 @@
 // Scheduler lease lock for .claude/scheduled_tasks.json.
 //
-// When multiple Claude sessions run in the same project directory, only one
+// When multiple Yao sessions run in the same project directory, only one
 // should drive the cron scheduler. The first session to acquire this lock
 // becomes the scheduler; others stay passive and periodically probe the lock.
 // If the owner dies (PID no longer running), a passive session takes over.
@@ -20,7 +20,7 @@ import { safeParseJSON } from './json.js'
 import { lazySchema } from './lazySchema.js'
 import { jsonStringify } from './slowOperations.js'
 
-const LOCK_FILE_REL = join('.claude', 'scheduled_tasks.lock')
+const LOCK_FILE_REL = join('.ycode', 'scheduled_tasks.lock')
 
 const schedulerLockSchema = lazySchema(() =>
   z.object({

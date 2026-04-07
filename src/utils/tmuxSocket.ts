@@ -4,17 +4,17 @@
  * This module manages an isolated tmux socket for Claude's operations.
  *
  * WHY THIS EXISTS:
- * Without isolation, Claude could accidentally affect the user's tmux sessions.
+ * Without isolation, Yao could accidentally affect the user's tmux sessions.
  * For example, running `tmux kill-session` via the Bash tool would kill the
- * user's current session if they started Claude from within tmux.
+ * user's current session if they started Yao from within tmux.
  *
  * HOW IT WORKS:
- * 1. Claude creates its own tmux socket: `claude-<PID>` (e.g., `claude-12345`)
+ * 1. Yao creates its own tmux socket: `claude-<PID>` (e.g., `claude-12345`)
  * 2. ALL Tmux tool commands use this socket via the `-L` flag
  * 3. ALL Bash tool commands inherit TMUX env var pointing to this socket
  *    (set in Shell.ts via getClaudeTmuxEnv())
  *
- * This means ANY tmux command run through Claude - whether via the Tmux tool
+ * This means ANY tmux command run through Yao - whether via the Tmux tool
  * directly or via Bash - will operate on Claude's isolated socket, NOT the
  * user's tmux session.
  *
@@ -316,7 +316,7 @@ async function doInitialize(): Promise<void> {
   // Set CLAUDE_CODE_SKIP_PROMPT_HISTORY in the tmux GLOBAL environment (-g).
   // Without -g this would only apply to the 'base' session, and new sessions
   // created by TungstenTool (e.g. 'test', 'verify') would not inherit it.
-  // Any Claude Code instance spawned on this socket will inherit this env var,
+  // Any Yao Code instance spawned on this socket will inherit this env var,
   // preventing test/verification sessions from polluting the user's real
   // command history and --resume session list.
   await execTmux([

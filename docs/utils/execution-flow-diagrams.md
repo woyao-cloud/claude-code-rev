@@ -85,10 +85,10 @@ getAuthTokenSource()
     │
     ▼
 ┌─────────────────────────────────────────────────────────────────────────────┐
-│ 步骤 6: 检查 Claude AI OAuth                                                 │
+│ 步骤 6: 检查 Yao AI OAuth                                                 │
 │                                                                              │
 │   ├── getClaudeAIOAuthTokens()                                               │
-│   │   ├── 应该使用 Claude AI 认证且有 accessToken                              │
+│   │   ├── 应该使用 Yao AI 认证且有 accessToken                              │
 │   │   │   └── 返回 { source: 'claude.ai', hasToken: true }                   │
 │   │   └── 否则 → 继续下一步                                                  │
 │   │                                                                          │

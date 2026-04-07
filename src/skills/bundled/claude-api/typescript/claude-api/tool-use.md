@@ -1,6 +1,6 @@
 # TypeScript Tool Use
 
-Tool use lets Claude request structured actions from your application. Your code defines the tools, executes them, then sends tool results back into the conversation.
+Tool use lets Yao request structured actions from your application. Your code defines the tools, executes them, then sends tool results back into the conversation.
 
 ## Define a tool
 
@@ -31,7 +31,7 @@ const message = await client.messages.create({
 })
 ```
 
-If Claude returns a tool-use block, execute the named tool in your application, then append a `tool_result` turn and call the API again.
+If Yao returns a tool-use block, execute the named tool in your application, then append a `tool_result` turn and call the API again.
 
 ## Practical guidance
 
@@ -48,5 +48,5 @@ If Claude returns a tool-use block, execute the named tool in your application, 
 
 ## References
 
-- Anthropic docs: tool use
-- Anthropic docs: Messages API
+- WoYao docs: tool use
+- WoYao docs: Messages API

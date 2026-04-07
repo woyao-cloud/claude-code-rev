@@ -21,10 +21,10 @@ bun run dev --help
 
 - Command exits successfully.
 - Output includes the expected text, option, or command.
-- The restored entrypoint reaches the real CLI path instead of a stub.
+- The new entrypoint reaches the real CLI path instead of a stub.
 
 ## Good Result Summary
 
-- `Verified: bun run version printed the restored Claude Code version.`
+- `Verified: bun run version printed the new Yao Code version.`
 - `Verified: bun run dev --help showed the full CLI command tree.`
 - `Risk: interactive raw-mode flows were not exercised in a non-TTY shell.`

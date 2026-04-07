@@ -1,4 +1,4 @@
-# Claude Code Agent 实现原理分析
+# Yao Code Agent 实现原理分析
 
 ## 1. 概述
 
@@ -29,7 +29,7 @@ export type AgentDefinition =
 - `general-purpose` - 通用代理，默认执行子任务
 - `explore` - 代码探索代理（只读搜索）
 - `plan` - 实现规划代理（只读分析）
-- `claude-code-guide` - Claude Code 使用指南
+- `claude-code-guide` - Yao Code 使用指南
 - `verification` - 验证代理（实验性）
 
 ---
@@ -40,7 +40,7 @@ export type AgentDefinition =
 
 ```
 ┌─────────────────────────────────────────────────────────────────────────────┐
-│                         Claude Code Agent 系统架构                            │
+│                         Yao Code Agent 系统架构                            │
 └─────────────────────────────────────────────────────────────────────────────┘
 
   用户输入: "/agent 执行任务"

@@ -1,11 +1,11 @@
 
-# Restored Claude Code Source
+# Restored Yao Code Source
 
 
 ![Preview](preview.png)
 
 
-  This repository is a restored Claude Code source tree reconstructed primarily from source maps and missing-module backfilling.
+  This repository is a restored Yao Code source tree reconstructed primarily from source maps and missing-module backfilling.
 
   It is not the original upstream repository state. Some files were unrecoverable from source maps and have been replaced with compatibility shims or degraded implementations so the
   project can install and run again.
@@ -17,7 +17,7 @@
   - `bun run version` succeeds.
   - `bun run dev` now routes through the restored CLI bootstrap instead of the temporary `dev-entry` shim.
   - `bun run dev --help` shows the full command tree from the restored CLI.
-  - A number of modules still contain restoration-time fallbacks, so behavior may differ from the original Claude Code implementation.
+  - A number of modules still contain restoration-time fallbacks, so behavior may differ from the original Yao Code implementation.
 
   ## Restored so far
 
@@ -68,11 +68,11 @@
 
   ## 中文说明
 
-  # 还原后的 Claude Code 源码
+  # 还原后的 Yao Code 源码
 
   ![Preview](preview.png)
 
-  这个仓库是一个主要通过 source map 逆向还原、再补齐缺失模块后得到的 Claude Code 源码树。
+  这个仓库是一个主要通过 source map 逆向还原、再补齐缺失模块后得到的 Yao Code 源码树。
 
   它并不是上游仓库的原始状态。部分文件无法仅凭 source map 恢复，因此目前仍包含兼容 shim 或降级实现，以便项目可以重新安装并运行。
 
@@ -83,7 +83,7 @@
   - `bun run version` 可以成功执行。
   - `bun run dev` 现在会通过还原后的真实 CLI bootstrap 启动，而不是临时的 `dev-entry`。
   - `bun run dev --help` 可以显示还原后的完整命令树。
-  - 仍有部分模块保留恢复期 fallback，因此行为可能与原始 Claude Code 实现不同。
+  - 仍有部分模块保留恢复期 fallback，因此行为可能与原始 Yao Code 实现不同。
 
   ### 已恢复内容
 

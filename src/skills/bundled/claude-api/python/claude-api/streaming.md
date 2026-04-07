@@ -5,9 +5,9 @@ Use streaming when you want text as it arrives instead of waiting for the final 
 ## Simple text streaming
 
 ```python
-from anthropic import Anthropic
+from anthropic import WoYao
 
-client = Anthropic()
+client = WoYao()
 
 with client.messages.stream(
     model="claude-sonnet-4-5",

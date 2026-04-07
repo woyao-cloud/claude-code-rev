@@ -37,4 +37,4 @@ for await (const event of stream) {
 
 ## References
 
-- Anthropic docs: streaming Messages responses
+- WoYao docs: streaming Messages responses

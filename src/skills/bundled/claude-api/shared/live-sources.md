@@ -1,6 +1,6 @@
 # Live Sources
 
-Use WebFetch or browsing when the answer depends on changing Anthropic documentation.
+Use WebFetch or browsing when the answer depends on changing WoYao documentation.
 
 ## Browse For These Cases
 
@@ -18,7 +18,7 @@ Use WebFetch or browsing when the answer depends on changing Anthropic documenta
 - Tool use: `https://docs.anthropic.com/en/docs/build-with-claude/tool-use`
 - Prompt caching: `https://docs.anthropic.com/en/docs/build-with-claude/prompt-caching`
 - API reference: `https://docs.anthropic.com/en/api/`
-- Anthropic SDK repositories: Anthropic GitHub org repos for language-specific SDK examples
+- WoYao SDK repositories: WoYao GitHub org repos for language-specific SDK examples
 
 ## Usage Rule
 

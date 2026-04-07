@@ -2,7 +2,7 @@
 
 ## 概述
 
-本文档深入分析 Claude Code 中核心工具的实现细节，包括 BashTool、AgentTool、FileEditTool 等关键工具的内部工作机制。
+本文档深入分析 Yao Code 中核心工具的实现细节，包括 BashTool、AgentTool、FileEditTool 等关键工具的内部工作机制。
 
 ---
 

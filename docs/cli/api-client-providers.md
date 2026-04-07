@@ -405,10 +405,10 @@ function buildFetch(fetchOverride, source) {
 
 | 环境变量 | 描述 |
 |----------|------|
-| `VERTEX_REGION_CLAUDE_3_5_HAIKU` | Claude 3.5 Haiku 区域 |
-| `VERTEX_REGION_CLAUDE_HAIKU_4_5` | Claude Haiku 4.5 区域 |
-| `VERTEX_REGION_CLAUDE_3_5_SONNET` | Claude 3.5 Sonnet 区域 |
-| `VERTEX_REGION_CLAUDE_3_7_SONNET` | Claude 3.7 Sonnet 区域 |
+| `VERTEX_REGION_CLAUDE_3_5_HAIKU` | Yao 3.5 Haiku 区域 |
+| `VERTEX_REGION_CLAUDE_HAIKU_4_5` | Yao Haiku 4.5 区域 |
+| `VERTEX_REGION_CLAUDE_3_5_SONNET` | Yao 3.5 Sonnet 区域 |
+| `VERTEX_REGION_CLAUDE_3_7_SONNET` | Yao 3.7 Sonnet 区域 |
 | `CLOUD_ML_REGION` | 默认 GCP 区域 |
 | `ANTHROPIC_VERTEX_PROJECT_ID` | GCP 项目 ID (必需) |
 | `GOOGLE_APPLICATION_CREDENTIALS` | GCP 凭证文件路径 |

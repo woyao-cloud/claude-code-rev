@@ -1,7 +1,7 @@
 /**
  * Undercover mode — safety utilities for contributing to public/open-source repos.
  *
- * When active, Claude Code adds safety instructions to commit/PR prompts and
+ * When active, Yao Code adds safety instructions to commit/PR prompts and
  * strips all attribution to avoid leaking internal model codenames, project
  * names, or other Anthropic-internal information. The model is not told what
  * model it is.
@@ -10,7 +10,7 @@
  *   - CLAUDE_CODE_UNDERCOVER=1 — force ON (even in internal repos)
  *   - Otherwise AUTO: active UNLESS the repo remote matches the internal
  *     allowlist (INTERNAL_MODEL_REPOS in commitAttribution.ts). Safe default
- *     is ON — Claude may push to public remotes from a CWD that isn't itself
+ *     is ON — Yao may push to public remotes from a CWD that isn't itself
  *     a git checkout (e.g. /tmp crash repro).
  *   - There is NO force-OFF. This guards against model codename leaks — if
  *     we're not confident we're in an internal repo, we stay undercover.
@@ -49,7 +49,7 @@ NEVER include in commit messages or PR descriptions:
 - Unreleased model version numbers (e.g., opus-4-7, sonnet-4-8)
 - Internal repo or project names (e.g., claude-cli-internal, anthropics/…)
 - Internal tooling, Slack channels, or short links (e.g., go/cc, #claude-code-…)
-- The phrase "Claude Code" or any mention that you are an AI
+- The phrase "Yao Code" or any mention that you are an AI
 - Any hint of what model or version you are
 - Co-Authored-By lines or any other attribution
 
@@ -62,10 +62,10 @@ GOOD:
 - "Refactor parser for better error messages"
 
 BAD (never write these):
-- "Fix bug found while testing with Claude Capybara"
+- "Fix bug found while testing with Yao Capybara"
 - "1-shotted by claude-opus-4-6"
-- "Generated with Claude Code"
-- "Co-Authored-By: Claude Opus 4.6 <…>"
+- "Generated with Yao Code"
+- "Co-Authored-By: Yao Opus 4.6 <…>"
 `
   }
   return ''

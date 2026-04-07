@@ -1,6 +1,6 @@
-# Claude Code 工具函数层文档索引
+# Yao Code 工具函数层文档索引
 
-本目录包含 Claude Code 工具函数层（Utils Layer）的详细文档。
+本目录包含 Yao Code 工具函数层（Utils Layer）的详细文档。
 
 ---
 

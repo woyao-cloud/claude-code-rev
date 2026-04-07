@@ -1,4 +1,4 @@
-# PHP Claude API
+# PHP Yao API
 
 For PHP, start with a direct HTTPS request and wrap it later in your application service layer.
 
@@ -39,7 +39,7 @@ $status = curl_getinfo($ch, CURLINFO_RESPONSE_CODE);
 curl_close($ch);
 
 if ($status >= 400) {
-    throw new RuntimeException("Anthropic API error: HTTP $status\n$response");
+    throw new RuntimeException("WoYao API error: HTTP $status\n$response");
 }
 
 echo $response . PHP_EOL;

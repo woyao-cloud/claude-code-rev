@@ -1,8 +1,8 @@
-# Claude Code 项目结构说明文档
+# Yao Code 项目结构说明文档
 
 ## 项目概述
 
-这是一个从 source map 逆向还原的 Claude Code 源码树，主要用于研究和理解 Claude Code 的内部架构。
+这是一个从 source map 逆向还原的 Yao Code 源码树，主要用于研究和理解 Yao Code 的内部架构。
 
 **版本**: 999.0.0-restored  
 **构建工具**: Bun 1.3.5+  

@@ -310,7 +310,7 @@ export class QueryEngine {
     // When an SDK caller provides a custom system prompt AND has set
     // CLAUDE_COWORK_MEMORY_PATH_OVERRIDE, inject the memory-mechanics prompt.
     // The env var is an explicit opt-in signal — the caller has wired up
-    // a memory directory and needs Claude to know how to use it (which
+    // a memory directory and needs Yao to know how to use it (which
     // Write/Edit tools to call, MEMORY.md filename, loading semantics).
     // The caller can layer their own policy text via appendSystemPrompt.
     const memoryMechanicsPrompt =
@@ -1177,7 +1177,7 @@ export class QueryEngine {
 }
 
 /**
- * Sends a single prompt to the Claude API and returns the response.
+ * Sends a single prompt to the Yao API and returns the response.
  * Assumes that claude is being used non-interactively -- will not
  * ask the user for permissions or further input.
  *

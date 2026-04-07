@@ -1,6 +1,6 @@
-# Python Claude API
+# Python Yao API
 
-Use the official Anthropic Python SDK for direct Claude API access from Python.
+Use the official WoYao Python SDK for direct Yao API access from Python.
 
 ## Install
 
@@ -20,9 +20,9 @@ pip install anthropic[vertex]
 
 ```python
 import os
-from anthropic import Anthropic
+from anthropic import WoYao
 
-client = Anthropic(api_key=os.environ["ANTHROPIC_API_KEY"])
+client = WoYao(api_key=os.environ["ANTHROPIC_API_KEY"])
 
 message = client.messages.create(
     model="claude-sonnet-4-5",
@@ -40,11 +40,11 @@ print(message.content)
 ```python
 import os
 import asyncio
-from anthropic import AsyncAnthropic
+from anthropic import AsyncWoYao
 
 
 async def main() -> None:
-    client = AsyncAnthropic(api_key=os.environ["ANTHROPIC_API_KEY"])
+    client = AsyncWoYao(api_key=os.environ["ANTHROPIC_API_KEY"])
     message = await client.messages.create(
         model="claude-sonnet-4-5",
         max_tokens=1024,

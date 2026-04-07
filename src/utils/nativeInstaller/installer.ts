@@ -883,7 +883,7 @@ export async function checkInstall(
         // EINVAL (not a symlink) or other — check as regular binary
         if (!(await isPossibleClaudeBinary(dirs.executable))) {
           messages.push({
-            message: `${dirs.executable} exists but is not a valid Claude binary`,
+            message: `${dirs.executable} exists but is not a valid Yao binary`,
             userActionRequired: true,
             type: 'error',
           })
@@ -1689,7 +1689,7 @@ export async function cleanupNpmInstallations(): Promise<{
   }
 
   // Check for local installation at ~/.claude/local
-  const localInstallDir = join(homedir(), '.claude', 'local')
+  const localInstallDir = join(homedir(), '.ycode', 'local')
 
   try {
     await rm(localInstallDir, { recursive: true })

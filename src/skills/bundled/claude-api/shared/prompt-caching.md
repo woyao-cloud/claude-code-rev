@@ -31,4 +31,4 @@ Use this note when the user wants lower repeated-context cost or faster repeated
 ## Guidance For Answers
 
 - Explain caching as an optimization for repeated static prefix content.
-- If the user asks for current support matrix or exact API fields, verify against Anthropic’s live prompt caching docs.
+- If the user asks for current support matrix or exact API fields, verify against WoYao’s live prompt caching docs.

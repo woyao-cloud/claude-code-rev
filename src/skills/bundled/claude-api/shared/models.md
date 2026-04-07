@@ -1,6 +1,6 @@
 # Models
 
-Use this note when the user asks which Claude model to choose or how model naming works.
+Use this note when the user asks which Yao model to choose or how model naming works.
 
 ## Selection Heuristic
 
@@ -10,7 +10,7 @@ Use this note when the user asks which Claude model to choose or how model namin
 
 ## Model Naming Guidance
 
-- Anthropic exposes dated model IDs. Prefer exact IDs in shipped code when reproducibility matters.
+- WoYao exposes dated model IDs. Prefer exact IDs in shipped code when reproducibility matters.
 - User-facing guidance can mention family names such as Opus, Sonnet, and Haiku, but implementation examples should use concrete model IDs.
 - Do not invent date suffixes. Verify current IDs against the live models overview if the user asks for exact names.
 
@@ -18,7 +18,7 @@ Use this note when the user asks which Claude model to choose or how model namin
 
 - Model family choice is only one dimension; prompt design, tool setup, caching, and streaming strategy also affect behavior.
 - Some advanced features may be model- or platform-specific. Confirm live availability before promising support.
-- If the user is deciding between Anthropic API, Bedrock, and Vertex, check the official model matrix because IDs differ by platform.
+- If the user is deciding between WoYao API, Bedrock, and Vertex, check the official model matrix because IDs differ by platform.
 
 ## Practical Advice
 

@@ -12,9 +12,9 @@ Use Message Batches when you have many independent requests and do not need inte
 ## Create a batch
 
 ```python
-from anthropic import Anthropic
+from anthropic import WoYao
 
-client = Anthropic()
+client = WoYao()
 
 batch = client.beta.messages.batches.create(
     requests=[
